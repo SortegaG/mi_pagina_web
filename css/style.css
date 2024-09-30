@@ -1,0 +1,328 @@
+:root {
+    --darkgrey: rgb(41, 43, 43);
+    --lightblue: #63C7B2;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofadi One';
+    line-height: 1.5;
+}
+
+body { /*Caracteristicas del body*/
+    background-image: url('/Mipaginaweb3/assets/8887359.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: underline solid;
+    font-size: 35px;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 80px 0 0 !important;
+}
+
+h2,
+.h2index,
+h3,
+h4 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.h2index {
+    font-size: 40px;
+    margin-top: 120px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    margin: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 30px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+section {
+    margin: 50px 150px;
+}
+
+/* Barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: var(--darkgrey);
+    padding: 10px;
+    font-size: larger;
+}
+
+nav ul li a {
+    color: var(--lightblue);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociales */
+footer {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 50px;
+    background-color: var(--darkgrey);
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+i,
+i:hover,
+a:hover {
+    color: var(--lightblue);
+}
+
+i:hover,
+a:hover {
+    color: purple;
+}
+
+#a1 {
+    color: rgb(41, 43, 43);
+}
+
+#a1:hover {
+    color: purple;
+}
+
+/* Proyectos */
+.proyectos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px 0 50px;
+    border: 2px solid var(--darkgrey);
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.4);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.proyecto {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.proyectos p {
+    font-size: 30px;
+}
+
+.imagen-li {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.parrafo-li {
+    flex: 1;
+    margin: 0;
+}
+
+.h2proyecto {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+/* Biografía */
+.arbitro,
+.juegos {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: 25px 0;
+}
+
+.juegos {
+    height: 300px;
+    margin: 15px 0;
+}
+
+.contenedorbiografia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px 0 50px;
+    border: 2px solid var(--darkgrey);
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.4);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    justify-content: space-around;
+}
+
+/* Formulario */
+.my-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    border: 1px solid;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.my-form label,
+.my-form input,
+.my-form textarea,
+.my-form button,
+.my-form select {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.my-form input,
+.my-form textarea {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.my-form button {
+    background-color: var(--lightblue);
+    padding: 10px 15px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.my-form button:hover {
+    background-color: var(--darkgrey);
+}
+
+/* Mapa */
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    display: inline-block;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedor {
+        gap: 20px;
+        padding: 20px;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .proyectofullstack,
+    .proyectoarbitro {
+        font-size: 35px;
+    }
+
+    footer {
+        font-size: 20px;
+        justify-content: space-b;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    .contenedor {
+        width: 70%;
+        gap: 30px;
+    }
+
+    .proyectofullstack,
+    .proyectoarbitro {
+        font-size: 40px;
+    }
+
+    footer {
+        font-size: 22px;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .arbitro,
+    .juegos {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+.contenedor {
+    flex-direction: column;
+}
+
+
+    .contenedorbiografia {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    footer {
+        padding: 1em 0.5em; /* Reduce el padding en pantallas más pequeñas */
+        margin: 0; /* Elimina márgenes adicionales */
+        border-radius: 0;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+    }

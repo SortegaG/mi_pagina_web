@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mipaginaweb3/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/415eb65d7d.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pages/biografia.html">Biografía</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Rellena este formulario para ponerte en contacto conmigo</h3>
+        <form name="formulario" id="my-form" class="my-form" action="#" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <button type="submit">Enviar</button>
+
+
+            <label for="edad">Fecha de nacimiento</label>
+            <input type="date" id="date" name="date">
+
+            <label for="genero">Género</label>
+            <select name="genero" id="genero">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <label for="notificacion">Acepto terminos y condiciones</label>
+            <input type="checkbox" name="terminos" id="terminos">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+    <script src="../scripts/formulario.js"></script>
+</body>
+</html>
