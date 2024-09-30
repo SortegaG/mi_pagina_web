@@ -11,7 +11,7 @@
 }
 
 body { /*Caracteristicas del body*/
-    background-image: url('/Mipaginaweb3/assets/8887359.jpg'); 
+    background-image: url('../assets/8887359.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
